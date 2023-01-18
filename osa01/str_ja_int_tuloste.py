@@ -17,6 +17,6 @@ print(mjono2)
 
 print()
 
-# Tapa 3: f-merkkiojonot: https://ohjelmointi-22.mooc.fi/osa-1/3-lisaa-muuttujista#tulostaminen-f-merkkijonojen-avulla
+# Tapa 3: f-merkkiojonot: https://ohjelmointi-22.mooc.fi/osa-1/3-lisaa-muuttujista
 print('Tapa 3:')
 print(f'{teksti} {hinta}')
