@@ -4,7 +4,6 @@ ja asioiden opettelemiseksi, mutta koodin kopiointi tehtävän ratkaisuun on kie
 '''
 
 # 2011 ei ole, 2020 on, 1800 ei ole, 2000 on
-
 vuosi = 2011
 
 jaollinen_4 = vuosi % 4 == 0
