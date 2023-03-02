@@ -1,12 +1,20 @@
 from random import choice
 
-kirjaimet = 'abcdefghijklmnopqrstuvwxyzåäö'
-kirjaimet = kirjaimet + kirjaimet.upper() + '0123456789!"#¤%&/()=?`'
+KIRJAIMET = 'abcdefghijklmnopqrstuvwxyzåäö'
+NUMEROT = '0123456789'
+ERIKOISMERKIT = '!#¤%&/()=?`'
 
-pituus = 64
-salasana = ''
+KAIKKI = KIRJAIMET + KIRJAIMET.upper() + NUMEROT + ERIKOISMERKIT
 
-while len(salasana) < pituus:
-    salasana += choice(kirjaimet)
 
-print(salasana)
+def luo_salasana(pituus):
+    '''
+    Luo ja palauttaa satunnaisen salasanan.
+    '''
+    pituus = max(32, pituus)
+    salasana = ''
+
+    while len(salasana) < pituus:
+        salasana += choice(KAIKKI)
+
+    return salasana
