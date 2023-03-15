@@ -12,6 +12,13 @@ kuukaudet = [
 
 
 def muotoile_pvm(pvm: date) -> str:
+    '''
+    >>> muotoile_pvm(date(2023, 12, 24))
+    'sunnuntai 24. joulukuuta 2023'
+
+    >>> muotoile_pvm(date(2023, 12, 25))
+    'maanantai 25. joulukuuta 2023'
+    '''
     kk = pvm.month  # tammi = 1, joulu = 12
     pv = pvm.isoweekday()  # Monday == 1 ... Sunday == 7
 
@@ -26,4 +33,5 @@ def main():
     print(muotoile_pvm(date(2023, 12, 24)))
 
 
-main()
+if __name__ == '__main__':
+    main()
