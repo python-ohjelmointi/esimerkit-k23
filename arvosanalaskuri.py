@@ -22,10 +22,10 @@ def laske_arvosana(tehtavapisteet: int) -> float:
 
     minimi = 0.25 * TEHTAVIA
 
-    if tehtavapisteet >= minimi:
-        return 1 + 4 * (tehtavapisteet - minimi) / (TEHTAVIA - minimi)
-    else:
+    if tehtavapisteet < minimi:
         return 0
+
+    return 1 + 4 * (tehtavapisteet - minimi) / (TEHTAVIA - minimi)
 
 
 def main():
