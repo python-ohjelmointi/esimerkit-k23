@@ -83,7 +83,7 @@ def main():
     if teht_arvosana >= 1 and koe_arvosana >= 1:
         arvosana = teht_arvosana * 0.5 + koe_arvosana * 0.5
 
-        print(f'Loppuarvosana on {pyorista(arvosana)} ({round(arvosana, 2)})')
+        print(f'Loppuarvosana on {pyorista(arvosana)} ({arvosana:.2f})')
 
     else:
         print('Suoritusta tulee täydentää')
