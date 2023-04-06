@@ -67,5 +67,5 @@ def pelaa(kierrokset: int):
 
 
 if __name__ == '__main__':
-    kierrokset = int(input('Kuinka monta kierrosta pelataan: '))
-    pelaa(kierrokset)
+    kierroksia = int(input('Kuinka monta kierrosta pelataan: '))
+    pelaa(kierroksia)
