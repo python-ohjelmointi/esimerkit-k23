@@ -1,5 +1,3 @@
-import math
-
 DISCLAIMER = '''
 Voit kokeilla tämän laskurin avulla, minkä loppuarvosanan eri
 osasuoritukset tuottavat. Viikkotehtävien pistemäärän voit
