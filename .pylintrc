@@ -90,7 +90,8 @@ disable=raw-checker-failed,
         invalid-name,
         missing-function-docstring,
         consider-using-in,
-        duplicate-code
+        duplicate-code,
+        use-dict-literal
 
 # Enable the message, report, category or checker with the given id(s). You can
 # either give multiple identifier separated by comma (,) or put this option
