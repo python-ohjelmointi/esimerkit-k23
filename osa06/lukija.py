@@ -5,7 +5,7 @@ def lue_tyontekijat() -> str:
     csv: Path = Path(__file__).parent / "tyontekijat.csv"
 
     if not csv.exists():
-        raise Exception("Tiedostoa ei löydy")
+        raise FileNotFoundError("Tiedostoa ei löydy")
 
     sisalto: str = csv.read_text(encoding="utf-8")
     return sisalto
